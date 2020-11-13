@@ -1,33 +1,40 @@
+
+<!--
+
+if(website) {
+
+renderTemplate("index.php")
+
+} else {
+
+send.message("This page is currently under construction!
+
+If you need support, you can come to our support server.
+
+Or, if you want to know the status of the bot, you can check the Status page.")
+
+}
+
+let support_server = "https://discord.gg/T4BMtSu"
+let status_page = "https://asunabot.statuspage.io"
+-->
+
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" href="https://cdn.discordapp.com/attachments/747455199072878633/776763278092664842/AsunaYeniLogo.png" />
-      <meta name="language" content="tr" />
-      <title>Asuna The discord bot</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/747455199072878633/776763278092664842/AsunaYeniLogo.png">
+       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+      <title>Asuna | The Discord Bot</title>
    </head>
-   <br><br><br><br><br><br>
-   <body>
-      <div class="application">
-         <div style="z-index:1; user-select: none; margin-top: 80px; transform: scale(0.9);" class="center index_center">
-            <a class="index_center_a">Discord bot made with JavaScript</a>
-            <br>
-            <div style="margin-top: 20px;">
-               <span>Beta & Free • The most easy-to-use Discord bot • Moderation | Search | NSFW & more!</span>
-            </div>
-            <br><br><br>
-            <div id="buttons">
-               <div>
-                  <button onclick="window.location.href = 'https://discord.com/oauth2/authorize?client_id=689171084867665989&scope=bot&permissions=8'" class="ring_button">Add to Server</button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="#soon"><button class="ring_button1">All Commands</button></a>
-               </div>
-            </div>
-         </div>
-      </div>
+   <body class="select-none" dragger="false">
+      <style>
+         body {
+         background-color: #1e1d26;
+        select-none;
+         }
+      </style>
    </body>
 </html>
-<style>
-   @import 'https://fonts.googleapis.com/css?family=Poppins&display=swap';@import 'https://fonts.googleapis.com/css?family=Montserrat';@import 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';html{font-family:Arial,Helvetica,sans-serif}body{background:#23272a}.application{padding:30px 50px;color:#fff}.header{overflow:hidden;position:relative;width:100%;height:100px;min-height:5px;max-height:100px;background:#23272a;margin:-8px}.center{position:relative;margin:190px auto;width:830px}.guild{text-align:left;min-height:30px;border-radius:20px;border:none;background:#85c;width:400px;float:left;height:65px;margin-left:30px;margin-top:30px;cursor:pointer}.index_center{text-align:center}.index_center_a{text-transform:uppercase;font-size:33px;font-family:poppins,Arial,Helvetica,sans-serif;color:#fff;font-weight:700;letter-spacing:-.4px}.guild_a{font-family:poppins,Arial,Helvetica,sans-serif;color:#fff;font-weight:700;letter-spacing:-.4px;text-transform:uppercase;font-size:16px}.ring_button1{min-width:300px;min-height:60px;font-family:poppins,Arial,Helvetica,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:1.3px;font-weight:700;color:#313133;background:#33353d;background:linear-gradient(90deg,rgb(95,96,102) 0%,rgb(107,108,114) 100%);border:none;border-radius:1000px;color:lightgrey;box-shadow:4px 4px 24px #33353d;transition:all .3s ease-in-out 0s;cursor:pointer;outline:none;position:relative;padding:10px}.ring_button1::before{content:' ';border-radius:1000px;max-width:calc(300px + 12px);min-height:calc(60px + 12px);border:6px solid #5f6066;width:103%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;transition:all .3s ease-in-out 0s}.ring_button1:hover,.ring_button1:focus{color:#ccccd6;transform:translateY(-6px)}.ring_button1:hover::before,.ring_button1:focus::before{opacity:1}.ring_button1::after{content:' ';width:30px;height:30px;border-radius:100%;border:none;position:absolute;z-index:-1;top:50%;left:50%;transform:translate(-50%,-50%)}.ring_button1:hover::after,.ring_button1:focus::after{animation:none;border:none;display:none}.guild_icon{height:66px;border-radius:0 20px 20px 0;background-repeat:no-repeat;width:120px;object-fit:cover;-webkit-mask:-webkit-gradient(linear,left top,right top,from(transparent),color-stop(60%,hsla(0,0%,100%,0.59)))}.ring_button{min-width:300px;min-height:60px;font-family:poppins,Arial,Helvetica,sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:1.3px;font-weight:700;color:#313133;background:#7289da;background:linear-gradient(90deg,#7289DA 0%,rgb(140,158,223) 100%);border:none;border-radius:1000px;box-shadow:4px 4px 24px #8196e2;transition:all .3s ease-in-out 0s;cursor:pointer;outline:none;position:relative;padding:10px}.ring_button::before{content:' ';border-radius:1000px;max-width:calc(300px + 12px);min-height:calc(60px + 12px);border:6px solid #7289da;width:103%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;transition:all .3s ease-in-out 0s}.ring_button:hover,.ring_button:focus{color:#313133;transform:translateY(-6px)}.ring_button:hover::before,.ring_button:focus::before{opacity:1}.ring_button::after{content:' ';width:30px;height:30px;border-radius:100%;border:6px solid #7289da;position:absolute;z-index:-1;top:50%;left:50%;transform:translate(-50%,-50%);animation:ring 1.5s infinite}.ring_button:hover::after,.ring_button:focus::after{animation:none;border:none;display:none}@keyframes ring{0%{width:30px;height:30px;opacity:1}100%{width:300px;height:300px;opacity:0}}.guild_bottom_button{font-size:16px;border-radius:30px;padding:10px 30px;font-family:poppins,Arial,Helvetica,sans-serif;text-transform:uppercase;font-weight:700;background:#1b1d1f;border:none;transition-duration:.3s;color:#fff;cursor:pointer}.guild_bottom_button_mod{font-size:16px;border-radius:30px;padding:10px 30px;font-family:poppins,Arial,Helvetica,sans-serif;text-transform:uppercase;font-weight:700;background:#f84d5b;border:none;transition-duration:.3s;color:#000;cursor:pointer;margin-top:25px}.guild_bottom_button_mod:hover{background:#ff4e4e}.guild_bottom_button:hover{background:#2c2f31}.index_center span{color:#c7c4c4;font-size:23px}.index_center_img{height:39px;vertical-align:sub;line-height:2;filter:invert(1);pointer-events:none}.icon{height:40px}.float_left_header{float:left}.guild_a1{display:block}.guild_a2{display:none}.poppins{font-family:poppins,Arial,Helvetica,sans-serif;text-transform:uppercase;color:#fff;font-weight:700;letter-spacing:-.4px}.center1{position:relative;margin:190px auto;width:830px}.modal{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}.modal-content{background-color:#000;border-radius:30px;margin:auto;padding:30px;color:#fff;border:1px solid #171718;width:700px}.close{color:#aaa;float:right;font-size:28px;font-weight:700}.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer}hr{border:0;border-bottom:1px solid #606061}::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#1d1a1a}::-webkit-scrollbar-thumb{background:#242222}::-webkit-scrollbar-thumb:hover{background:#7d70f1}.postimg{width:730px}table{font-family:arial,sans-serif;border-collapse:collapse;border-spacing:0;margin-left:0;width:100%;color:#fff;background-color:#161616}td,th{border:1px solid #0e0d0d;text-align:left;padding:15px}tr:nth-child(even){background-color:#292929}@media screen and (max-width:450px){.postimg{width:280px}.guild_a1{display:none}.guild_a2{display:block}.modal-content{width:auto}.center1{position:relative;margin:190px auto;width:auto}.center{position:relative;margin:40px auto;width:300px}.index_center_img{height:33.5px;vertical-align:sub;line-height:2;filter:invert(1);pointer-events:none}.index_center_a{text-transform:uppercase;font-size:28px;font-family:poppins,Arial,Helvetica,sans-serif;color:#fff;font-weight:700;letter-spacing:-.4px}.guild{width:300px}.kahvel{width:fit-content}.icon{height:50px}.application{padding:15px;color:#fff}.float_left_header{float:inherit;margin-top:30px;text-align:center}.ring_button1{margin-top:25px}.header{overflow:hidden;position:relative;display:none;text-align:center;width:100%;height:55px;min-height:5px;max-height:100px;background:#1b1d1f;margin:-8px}}@media screen and (max-width:370px){.center{position:relative;margin:40px auto;width:250px}.guild{width:250px}}.dropdown{position:relative;display:inline-block}.dropdown-content{display:none;position:absolute;background-color:#1f1e1e;min-width:160px;border:10px solid #1f1e1e;border-radius:10px;overflow:auto;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);z-index:1}.dropdown-content a{color:#e7e7e7;padding:12px 16px;text-decoration:none;border-radius:20px;display:block}.dropdown a:hover{background-color:#353232}.show{display:block}.accordion{width:90%;max-width:1000px;margin:2rem auto}.accordion-item{background-color:#1b1d1f;color:#fff;margin:1rem 0;border-radius:.5rem;box-shadow:0 2px 5px 0 rgba(0,0,0,.25)}.accordion-item-header{padding:10px 30px;min-height:3.5rem;line-height:1.25rem;font-weight:700;display:flex;align-items:center;position:relative;cursor:pointer}.accordion-item-header::after{content:"\002B";font-size:2rem;position:absolute;right:1rem}.accordion-item-header.active::after{content:"\2212"}.accordion-item-body{max-height:0;overflow:hidden;transition:max-height .2s ease-out}.accordion-item-body-content{padding:1rem;line-height:1.5rem;border-top:1px solid;border-image:linear-gradient(to right,transparent,#34495e,transparent) 1}@media(max-width:767px){html{font-size:14px}}header span{color:#fff;font-weight:700;font-family:poppins;font-size:x-large}li{list-style:none}li a{font-family:open sans,sans-serif;list-style:none;color:#d3d3d3;cursor:pointer;text-decoration:none}li a:hover{color:#fff}header{padding:15px}nav ul{display:flex;margin-top:-26px;margin-left:71px;font-size:14px}nav li{margin-left:13px}header span{cursor:pointer}
-</style>

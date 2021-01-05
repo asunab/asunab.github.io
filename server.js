@@ -13,8 +13,8 @@ app.use(express.static("public"));
     express.static(path.resolve(__dirname + `/js`))
   );
   
-app.get("/status", (request, response) => {
-  response.redirect("https://asunabot.statuspage.io")
+app.get("/status", (request, response, res) => {
+  res.redirect('https://asunabot.statuspage.io');
 });
 app.get("/support", (request, response) => {
   response.redirect("https://discord.gg/T4BMtSu")

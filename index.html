@@ -1,40 +1,144 @@
-
-<!--
-
-if(website) {
-
-renderTemplate("index.php")
-
-} else {
-
-send.message("This page is currently under construction!
-
-If you need support, you can come to our support server.
-
-Or, if you want to know the status of the bot, you can check the Status page.")
-
-}
-
-let support_server = "https://discord.gg/T4BMtSu"
-let status_page = "https://asunabot.statuspage.io"
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="tr">
    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-      <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/747455199072878633/776763278092664842/AsunaYeniLogo.png">
-       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-      <title>Asuna | The Discord Bot</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" href="<%=bot.avatarURL%>">
+      <meta name="author" content="<%=bot.user.tag%>">
+      <meta name="keywords" content="Manage your Discord server with leveling, moderation, Twitch, Youtube and Reddit notifications. made by Real Code">
+      <meta property="og:image" content="<%=bot.avatarURL%>">
+      <meta property="og:title" content="<%=bot.user.username%> - The Discord Bot" />
+      <meta property="og:description" content="Manage your Discord server with leveling, moderation, Twitch, Youtube and Reddit notifications. made by Real Code">
+      <meta name="description" content="Manage your Discord server with leveling, moderation, Twitch, Youtube and Reddit notifications. ">
+      <meta name="theme-color" content="#60d1f6">
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://bootswatch.com/4/cyborg/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+      <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-B9BoFFAuBaCfqw6lxWBZrhg/z4NkwqdBci+E+Sc2XlK/Rz25RYn8Fetb+Aw5irxa" crossorigin="anonymous">
+      <link rel="stylesheet" href="C:\Users\incea\Desktop\asuna.js.org\css\main.css" />
+      <link rel='icon' href='https://cdn.discordapp.com/attachments/794646511131689041/796090961654579300/Asuna_Yuvarlak.png'>
+      <title>Asuna - The Discord Bot</title>
    </head>
-   <body class="select-none" dragger="false">
-      <style>
-         body {
-         background-color: #1e1d26;
-        select-none;
-         }
-      </style>
+   <body>
+      <nav style="background-color:#24252a" class="navbar navbar-expand-lg navbar-dark">
+         <a class="navbar-brand" href="/">
+            <h4>
+               ASUNA
+            </h4>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+            aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+               <li class="nav-item"><a href="/premium" class="nav-link">Premium</a></li>
+               <li class="nav-item"><a href="/os" class="nav-link">Open Source</a></li>
+               <li class="nav-item"><a href="/status" class="nav-link" target="_blank">Status</a></li>
+               <li class="nav-item"><a href="/support" class="nav-link" target="_blank">Support Server</a></li>
+            </ul>
+            <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link" ><i class="BaseIcon mr-2 fab fa-twitter"></i></a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="jumbotron" style="background-color:#24252a">
+            <center>
+               <img class="image" src="https://cdn.discordapp.com/attachments/794646511131689041/796054124721602641/Asuna.png" style="width:300px;" data-v-103341e2 data-v-103341e2>
+               <center>
+                  <h2 style="color:#fff;margin-bottom:14px;">
+                     ASUNA <img src="https://cdn.discordapp.com/emojis/763395835215740930.png" style="width:17px;"><br>
+                     <t2 style="font-size:20px;font-weight:900px;">1.5k servers, 369k members</t2>
+                  </h2>
+                  <t2 style="color:lightgrey;font-size:18px;margin-top:14px;">Asuna switched from SAO to Discord for you, Best of all! Moderation & Emoji & N.S.F.W & Information for COVID-19.</t2>
+               </center>
+               <left>
+                  <a style="margin-top: 30px;" class="site-btn" href="/invite" target="_blank">
+                     <h5 style="color:#fff">Add to Discord</h5>
+                  </a>
+               </left>
+               <right>
+                  <a class="site-btn2" href="#features">
+                     <h5 style="color:#fff">Features</h5>
+                  </a>
+               </right>
+            </center>
+            <div class="subbody" style="margin-top: 20%;">
+               <div class="fullsize">
+                  <div class="container">
+                     <center>
+                        <h3 style="color:white">Why Asuna? <a style="font-size:10px;">Coming Soon</a></h3>
+                     </center>
+                     <div style="margin-top: 4%;margin-bottom: 28%;">
+                        <img style="margin-left:20px;border-radius:3px;" src="https://cdn.discordapp.com/attachments/794646511131689041/796080666747207780/WhyAsunaBanner.png" border="0" align="right"/>
+                        <left>
+                           <h4 style="margin-bottom:10px;">{( features.title[0] )}</h4>
+                           <t style="color:#969899;font-size:17px;margin-top:10px;">
+                              A Discord bot covering all the features for your Discord server and helping you grow your server, Now you are free to do anything! What's more?
+                              <br><br>
+                              When using the bot, you must follow the <a href="https://discord.com/tos" target="_blank">Discord ToS</a> rules, otherwise you will have to take a long vacation.
+                           </t>
+                        </left>
+                     </div>
+                     <div style="margin-top: 20%;margin-bottom: 28%;">
+                        <img style="margin-right:20px;border-radius:3px;" src="https://cdn.discordapp.com/attachments/794646511131689041/796080666747207780/WhyAsunaBanner.png" border="0" align="left"/>
+                        <right>
+                           <h4 style="margin-bottom:10px;">{( features.title[1] )}</h4>
+                           <t style="color:#969899;font-size:17px;margin-top:10px;">
+                              A Discord bot covering all the features for your Discord server and helping you grow your server, Now you are free to do anything! What's more?
+                              <br><br>
+                              When using the bot, you must follow the <a href="https://discord.com/tos" target="_blank">Discord ToS</a> rules, otherwise you will have to take a long vacation.
+                           </t>
+                        </right>
+                     </div>
+                     <div style="margin-top: 20%;margin-bottom: 28%;">
+                        <img style="margin-left:20px;border-radius:3px;" src="https://cdn.discordapp.com/attachments/794646511131689041/796080666747207780/WhyAsunaBanner.png" border="0" align="right"/>
+                        <left>
+                           <h4 style="margin-bottom:10px;">{( features.title[2] )}</h4>
+                           <t style="color:#969899;font-size:17px;margin-top:10px;">
+                              A Discord bot covering all the features for your Discord server and helping you grow your server, Now you are free to do anything! What's more?
+                              <br><br>
+                              When using the bot, you must follow the <a href="https://discord.com/tos" target="_blank">Discord ToS</a> rules, otherwise you will have to take a long vacation.
+                           </t>
+                        </left>
+                     </div>
+                     <div style="margin-top: 20%;margin-bottom: 28%;">
+                        <img style="margin-right:20px;border-radius:3px;" src="https://cdn.discordapp.com/attachments/794646511131689041/796080666747207780/WhyAsunaBanner.png" border="0" align="left"/>
+                        <right>
+                           <h4 style="margin-bottom:10px;">{( features.title[3] )}</h4>
+                           <t style="color:#969899;font-size:17px;margin-top:10px;">
+                              A Discord bot covering all the features for your Discord server and helping you grow your server, Now you are free to do anything! What's more?
+                              <br><br>
+                              When using the bot, you must follow the <a href="https://discord.com/tos" target="_blank">Discord ToS</a> rules, otherwise you will have to take a long vacation.
+                           </t>
+                        </right>
+                     </div>
+                     <div style="margin-top:20%;margin-bottom:13%;">
+                        <img style="margin-left:20px;border-radius:3px;" src="https://cdn.discordapp.com/attachments/794646511131689041/796080666747207780/WhyAsunaBanner.png" border="0" align="right"/>
+                        <left>
+                           <h4 style="margin-bottom:10px;">{( features.title[4] )}</h4>
+                           <t style="color:#969899;font-size:17px;margin-top:10px;">
+                              A Discord bot covering all the features for your Discord server and helping you grow your server, Now you are free to do anything! What's more?
+                              <br><br>
+                              When using the bot, you must follow the <a href="https://discord.com/tos" target="_blank">Discord ToS</a> rules, otherwise you will have to take a long vacation.
+                           </t>
+                        </left>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
    </body>
 </html>

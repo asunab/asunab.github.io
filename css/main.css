@@ -733,7 +733,9 @@ ol {
 }
 
 /* Circle progress */
-.circle-progress {
+.circle-progress {	color: #fff;
+	cursor: pointer;
+	text-align: center;
 	display: -ms-flex;
 	display: -webkit-box;
 	display: -ms-flexbox;

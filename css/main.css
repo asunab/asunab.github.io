@@ -477,6 +477,22 @@ ol {
 }
 
 /* buttons */
+
+.nav-item:hover {
+	text-shadow: 0px 0px 3px white;
+}
+.nav-item2 {
+	margin-left: 14px;
+}
+.nav-item2:hover {
+	box-shadow: 0 0 10px 2px white;
+}
+.nav-item3 {
+	margin-left: 8px;
+}
+.nav-item3:hover {
+	box-shadow: 0 0 10px 2px white;
+}
 .site-btn {
 	display: inline-block;
 	border: none;
@@ -2079,6 +2095,6 @@ svg.wave>path.wavePath2 {
 }
 .image {
 	border-radius: 100%;
-	border: 5px solid #7289DA;
+	border: 5px solid #43b581;
 	margin-bottom: 14px;
 }
